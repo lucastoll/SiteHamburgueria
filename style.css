@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    width: 100%;
+    background: #A71315;
+    height: 95px;
+    display: flex;
+    display: space-around;
+}
+
+#redes {
+    float: right;
+    justify-self: flex-end;
+    text-align: right;
+}
+
+body {
+    background: #FDBC00;
+}
+
+#logo {
+    width: 94px;
+    height: 95px;
+}
+
+.cabecalho {
+    color: #FFFFFF;
+    font-family: 'Bree Serif', serif;
+    font-size: 20px;
+    line-height: 450%
+}
+
+h1 {
+    color: #0B0621;
+    font-family: 'Bree Serif', serif;
+    font-size: 76px;
+    text-align: center;
+    align-self: center;
+    word-spacing: 10px;
+    letter-spacing: 1px;
+}
+
+.subtitulos {
+    color: #0B0621;
+    font-family: 'Bree Serif', serif;
+    font-size: 51px;
+    text-align: center;
+}
+
+#cardapiopng {
+    width: 104px;
+    height: 66px;
+}
+
+.socialmedia {
+    width: 238px;
+    height: 200px;
+}
