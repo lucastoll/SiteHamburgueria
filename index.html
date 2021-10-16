@@ -11,23 +11,31 @@
 <body>
     <!-- NAVBAR -->
     <header>
-        <img src="conteudo/imagens/logo.png" id="logo">
-        <div id="cabecalho">
-        <h2>Faça seu pedido</h2>
-        <h2>Cardápio</h2>
-        <div style="justify-self: flex-end;"><h2 style="text-align: right;">Redes Sociais</h2></div>
-        </div> 
-    </header>
+        <div id=header>
+            <div id="linkleft">
+                <img src="conteudo/imagens/logo.png" id="logo">
+                <h2>Faça seu pedido</h2>
+                <h2>Cardápio</h2>
+            </div>
+    
+            <div id="linkright">
+            <h2>Redes Sociais</h2>
+            </div>
+        </div>
+        </header>
     <!-- IMAGENS COM SLIDE -->
-    <!-- <h1>American Taste Hamburgueria</h1>            <br><br><br><br><br><br><br><br><br><br><br> -->
+    <h1>American Taste Hamburgueria</h1>
+    <div style="margin-bottom: 500px;"></div>
     <!-- CARDAPIO + IMAGEM COM SLIDE -->
-    <div style="justify-content: center; display: flex; width: 100%;">
-    <h2 style="position: absolute;"class="subtitulos">Cardápio</h2> <img style="margin-right: 275px;" id="cardapiopng" src="conteudo/imagens/cardapio.png">       <br><br><br><br><br><br><br>
+    <div id="containercardapio">
+    <img id="cardapiopng" src="conteudo/imagens/cardapio.png">     
+    <h2 class="subtitulos">Cardápio</h2> 
     </div>
+    <div style="height: 500px;"></div>
     <!-- FAÇA SEU PEDIDO -->
     <h2 class="subtitulos">Faça seu pedido</h2>
     <p>Whatsapp e Delivery: (11) 4025-2000</p>
-    <div id="pedido">
+    <div id="containerpedido">
         <figure>
             <a href="https://menu.ifood.com.br/4416263d-7533-411c-aafc-925ab00ea7bf" target="_blank"><img id="ifood" class="socialmedia" src="conteudo/imagens/ifood (1).png"></a>
         </figure>
@@ -40,7 +48,7 @@
     </div>
     <!--REDES SOCIAIS-->
     <h2 class="subtitulos" style="margin-top: 80px;">Redes sociais</h2>
-    <div id="redessociais">
+    <div id="containerredes">
         <figure>
         <a href="https://www.facebook.com/americantasteitu" target="_blank"> <img class="socialmedia" src="conteudo/imagens/facebook.png"></a>
         <figcaption>Facebook</figcaption>

@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap'); /* Bree Serif */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap'); /* Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');  /* Quicksand */
 
 #maincontainer {
     margin: 0;
@@ -16,43 +16,56 @@ body {
     background:linear-gradient(#FDBC00, #fd7200)
 }
 
-header {
-    width: 100%;
-    background: #f11d21;
-    background: #fa0d11;
-    /* background:linear-gradient(#A71315, #e73737a8); */
-    /* background: #A71315; */
-    height: 70px;
+/* GERAL */
+
+.subtitulos {
+    color: #000000;
+    font-family: 'Bree Serif', serif;
+    font-size: 51px;
+    text-align: center;
+}
+
+.socialmedia {
+    width: 150px;
+    height: 120px;
+}
+
+/* HEADER */
+
+#header{
     display: flex;
-    display: space-around;
-}
-
-#logo {
-    width: 80px;
-    height: 70px;
-}
-
-#cabecalho {
-    display: flex; 
+    background: white;
+    color: black;
     width: 100%;
+    height: 70px;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+    font-family: 'Quicksand', sans-serif;
+}
+
+#header div{
+    font-size: 17px;
+    align-self: center;
     align-items: center;
 }
 
-#cabecalho h2 {
-    color: black;
-    font-family: 'Bree Serif', serif;
-    font-size: 20px;
+#logo {
+    width: 70px;
+    height: 70px;
+}
+
+#linkleft {
+    display: flex;
+}
+
+#linkleft img, h2{
     margin-right: 30px;
 }
 
-#cabecalho h2:nth-child(3) {
-    justify-self: flex-end;
-    float: right;
-}
-
+/* AMERICAN TASTE HAMBURGUERIA */
 
 h1 {
-    color: #0B0621;
+    color: #000000;
     font-family: 'Bree Serif', serif;
     font-size: 76px;
     text-align: center;
@@ -61,24 +74,24 @@ h1 {
     letter-spacing: 1px;
 }
 
-.subtitulos {
-    color: #0B0621;
-    font-family: 'Bree Serif', serif;
-    font-size: 51px;
-    text-align: center;
+
+/* CARDAPIO */
+
+#containercardapio {
+    justify-content: center; 
+    display: flex; 
+    width: 100%;
 }
 
 #cardapiopng {
-    width: 104px;
+    width: 60px;
     height: 66px;
+    margin-right: 5px;
 }
 
-.socialmedia {
-    width: 150px;
-    height: 120px;
-}
+/* PEDIDO */
 
-#pedido {
+#containerpedido {
     align-items: center;
     justify-content: space-evenly; 
     max-width: 1200px; 
@@ -86,6 +99,7 @@ h1 {
     margin: 0 auto;
     margin-top: 30px;
 }
+
 
 figure {
     justify-content: center;
@@ -104,7 +118,9 @@ p {
     font-family: 'Montserrat', sans-serif;
 }
 
-#redessociais {
+/* REDES SOCIAIS */
+
+#containerredes {
     display: flex;
     justify-content: center;
     gap: 100px;
