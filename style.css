@@ -1,39 +1,55 @@
-@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap'); /* Bree Serif */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap');
+
+
+#maincontainer {
+    margin: 0;
+    padding: 0%;
+}
 
 * {
     padding: 0;
     margin: 0;
 }
 
+body {
+    background:linear-gradient(#FDBC00, #fd7200)
+}
+
 header {
     width: 100%;
-    background: #A71315;
-    height: 95px;
+    background: #f11d21;
+    background: #fa0d11;
+    /* background:linear-gradient(#A71315, #e73737a8); */
+    /* background: #A71315; */
+    height: 70px;
     display: flex;
     display: space-around;
 }
 
-#redes {
-    float: right;
-    justify-self: flex-end;
-    text-align: right;
-}
-
-body {
-    background: #FDBC00;
-}
-
 #logo {
-    width: 94px;
-    height: 95px;
+    width: 80px;
+    height: 70px;
 }
 
-.cabecalho {
-    color: #FFFFFF;
+#cabecalho {
+    display: flex; 
+    width: 100%;
+    align-items: center;
+}
+
+#cabecalho h2 {
+    color: black;
     font-family: 'Bree Serif', serif;
     font-size: 20px;
-    line-height: 450%
+    margin-right: 30px;
 }
+
+#cabecalho h2:nth-child(3) {
+    justify-self: flex-end;
+    float: right;
+}
+
 
 h1 {
     color: #0B0621;
@@ -58,6 +74,40 @@ h1 {
 }
 
 .socialmedia {
-    width: 238px;
-    height: 200px;
+    width: 150px;
+    height: 120px;
 }
+
+#pedido {
+    align-items: center;
+    justify-content: space-evenly; 
+    max-width: 1200px; 
+    display: flex;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+figure {
+    justify-content: center;
+    text-align: center;
+    height: 130px;
+}
+
+figure figcaption {
+    font-size: 30px;
+    font-family: 'Bree Serif', serif;
+}
+
+p {
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#redessociais {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin: 50px;
+}
+
