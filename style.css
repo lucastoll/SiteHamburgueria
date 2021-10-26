@@ -16,8 +16,8 @@
 body {
     /* background:linear-gradient(#FDBC00, #fd7200); */
     background:linear-gradient(#FDBC00, #fd9800);
-    /* background:linear-gradient(#FDBC00, #f0b800); */
-}
+/*     background:linear-gradient(#f1d074, #e07025);
+ */}
 
 /* GERAL */
 
@@ -37,8 +37,8 @@ body {
 
 #header{
     display: flex;
-    /* background: #f72929; */
-    background: black;
+    background: #000000f3;
+   /*  background: black; */
     color: white;
     /* color: #f72929; */
     width: 100%;
@@ -47,47 +47,39 @@ body {
     border-bottom: 1px solid gray;
     font-family: 'Quicksand', sans-serif;
     /* position: fixed; */
+    transition: translateX(-50%) translateY(-50%)
 }
 
 #header div{
     font-size: 17px;
     align-self: center;
     align-items: center;
+    gap: 30px;
 }
 
-a {
+a, a:hover, a:visited, a:link, a:active
+{
+    color: white;
     text-decoration: none;
-}
-
-
-a:hover {
-    color: white;
-    text-decoration:none; 
-    cursor:pointer;  
-}
-
-a:active{
-    color: white;
-}
-
-a:visited{
-    color: white;
+    cursor: pointer;
 }
 
 #logo {
-    width: 70px;
-    height: 70px;
+    width: 90px;
+    height: 80px;
+    margin-left: 20px;
 }
 
 #linkleft {
     display: flex;
 }
 
-#linkleft img, h2{
+#linkright {
     margin-right: 30px;
 }
 
-/* AMERICAN TASTE HAMBURGUERIA */
+
+/* AMERICAN TASTE HAMBURGUERIA + SLIDE PROPAGANDA */
 
 h1 {
     color: #000000;
@@ -99,6 +91,57 @@ h1 {
     letter-spacing: 1px;
 }
 
+.propaganda img{
+    width: 734px;
+    height: 488px;
+    border: 1px solid black;
+}
+
+#carouselExampleSlidesOnly{
+    margin: 0;
+}
+
+.cool-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: width .3s;
+}
+
+.cool-link:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+
+#funcionamento{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#funcionamento p {
+    font-family: 'Bree Serif', serif;
+    font-size: 30px;
+    line-height: 33px;
+    padding-top: 10px;
+}
+
+#caixavermelha{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 174px;
+    height: 45px;
+    color: white;
+    background: #A71315;
+    font-family: 'Bree Serif', serif;
+    font-size: 20px;
+}
 
 /* CARDAPIO */
 
@@ -112,27 +155,56 @@ h1 {
     width: 60px;
     height: 66px;
     margin-right: 5px;
+    margin-bottom: 5px;
 }
 
 /* SLIDEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE */
 
-.slider {
-    width: 600px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
+.carousel-control-next-icon{
+    background-image: url(conteudo/imagens/setaright.png);
+    display: inline-block;
+    width: 150px;
+    height: 200px;
+    position: absolute;
+    margin-left: 350px;
 }
 
-.slider__container {
-    height: 700px;
-    transform: translate(0);
-    transition: transform .8s ease;
-    display: flex;
+.carousel-control-prev-icon{
+    background-image: url(conteudo/imagens/setaleft.png);
+    width: 150px;
+    height: 200px;
+    position: absolute;
+    margin-right: 350px;
 }
 
-.slider__container img {
-    width: 100%;
+.borda {
+    border: 10px solid black;
+    margin: 20px;
+}
+
+
+.carousel-indicators li {
+    box-sizing: content-box;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    width: 50px;
+    height: 5px;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #212529;
+    background-clip: padding-box;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    opacity: .5;
+    transition: opacity .6s ease;
+}
+
+
+.cardapio img{
+    height: 900px;
+    width: 900px;
 }
 
 /* PEDIDO */
@@ -172,4 +244,6 @@ p {
     gap: 100px;
     margin: 50px;
 }
+
+
 

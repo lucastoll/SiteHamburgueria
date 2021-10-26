@@ -1,2 +1,4 @@
-import Slider from './slider';
-new Slider();
+$('.carousel').carousel({
+    interval: 10000
+    
+  })
