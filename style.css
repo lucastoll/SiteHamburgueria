@@ -13,6 +13,9 @@
     scroll-behavior: smooth;
 }
 
+body{
+    overflow-x: hidden;
+}
 
 /* HEADER */
 
@@ -353,4 +356,166 @@ h1 {
     }
 }
 
+
+/* CARDAPIO */
+
+#containercardapio {
+    justify-content: center; 
+    align-items: center;
+    display: flex; 
+    width: 100%;
+    margin-top: 10px;
+}
+
+#cardapiopng {
+    width: 60px;
+    height: 66px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+/* SLIDEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE */
+
+.carousel-control-next-icon{
+    background-image: url(conteudo/imagens/setaright.png);
+    display: inline-block;
+    width: 150px;
+    height: 200px;
+    position: absolute;
+    margin-left: 350px;
+}
+
+.carousel-control-prev-icon{
+    background-image: url(conteudo/imagens/setaleft.png);
+    width: 150px;
+    height: 200px;
+    position: absolute;
+    margin-right: 350px;
+}
+
+
+.borda {
+    border: 10px solid black;
+    margin: 20px;
+}
+
+
+.carousel-indicators li {
+    box-sizing: content-box;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    width: 50px;
+    height: 5px;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #212529;
+    background-clip: padding-box;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    opacity: .5;
+    transition: opacity .6s ease;
+}
+
+
+.cardapio img{
+    height: 900px;
+    width: 900px;
+}
+
+@media(max-width: 1600px){
+    .carousel-control-next-icon{
+        background-image: url(conteudo/imagens/caret-right-fill.svg);
+        width: 50px;
+        height: 100px;
+        position: absolute;
+        margin-left: 200px;
+    }
+    
+    .carousel-control-prev-icon{
+        background-image: url(conteudo/imagens/caret-left-fill.svg);
+        width: 50px;
+        height: 100px;
+        position: absolute;
+        margin-right: 200px;
+    }   
+}
+
+@media(max-width: 1200px){
+    .carousel-control-next-icon{
+        margin-left: 180px;
+    }
+    
+    .carousel-control-prev-icon{
+        margin-right: 180px;
+    }   
+}
+
+
+@media(max-width: 991px){
+    .carousel-control-next-icon{
+        margin-left: 140px;
+    }
+    
+    .carousel-control-prev-icon{
+        margin-right: 140px;
+    }   
+}
+
+@media(max-width: 768px){
+    .cardapio img {
+        height: 600px;
+    }
+
+    .borda {
+        border: 5px solid black;
+    }
+
+    .carousel-control-next-icon{
+        margin-left: 110px;
+    }
+    
+    .carousel-control-prev-icon{
+        margin-right: 110px;
+    }   
+}
+
+@media(max-width: 576px){
+    .cardapio img {
+        height: 600px;
+    }
+
+    .borda {
+        border: 5px solid black;
+    }
+
+    .carousel-control-next-icon{
+        width: 20px;
+        margin-left: 50px;
+    }
+    
+    .carousel-control-prev-icon{
+        width: 20px;
+        margin-right: 50px;
+    }   
+}
+
+@media(max-width: 500px){
+    .cardapio img {
+        height: 600px;
+    }
+
+    .borda {
+        border: 5px solid black;
+    }
+
+    .carousel-control-next-icon{
+        display: none;
+    }
+    
+    .carousel-control-prev-icon{
+        display: none;
+    }   
+}
 
