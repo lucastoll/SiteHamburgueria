@@ -13,46 +13,24 @@
     scroll-behavior: smooth;
 }
 
-body {
-    /* background:linear-gradient(#FDBC00, #fd7200); */
-    background:linear-gradient(#FDBC00, #fd9800);
-/*     background:linear-gradient(#f1d074, #e07025);
- */}
-
-/* GERAL */
-
-.subtitulos {
-    color: #000000;
-    font-family: 'Bree Serif', serif;
-    font-size: 51px;
-    text-align: center;
-}
-
-.socialmedia {
-    width: 150px;
-    height: 120px;
-}
 
 /* HEADER */
 
 #header{
     display: flex;
     background: #000000f3;
-   /*  background: black; */
     color: white;
-    /* color: #f72929; */
     width: 100%;
     height: 70px;
     justify-content: space-between;
+    align-items: center;
     border-bottom: 1px solid gray;
     font-family: 'Quicksand', sans-serif;
-    /* position: fixed; */
     transition: translateX(-50%) translateY(-50%)
 }
 
 #header div{
     font-size: 17px;
-    align-self: center;
     align-items: center;
     gap: 30px;
 }
@@ -67,7 +45,7 @@ a, a:hover, a:visited, a:link, a:active
 #logo {
     width: 90px;
     height: 80px;
-    margin-left: 20px;
+    margin-left: 10px;
 }
 
 #linkleft {
@@ -79,7 +57,115 @@ a, a:hover, a:visited, a:link, a:active
 }
 
 
-/* AMERICAN TASTE HAMBURGUERIA + SLIDE PROPAGANDA */
+.cool-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: width .3s;
+}
+
+.cool-link:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+
+h2{
+    margin-bottom: 0px;
+}
+
+@media(max-width: 800px)
+{
+    #logo {
+        width: 70px;
+        height: 60px;
+    }
+
+
+    #header div{
+        gap: 15px;
+    }
+
+    .h2, h2 {
+        font-size: 1.5em;
+    }
+
+    #linkright {
+        margin-right: 10px;
+    }
+}
+
+@media(max-width: 600px)
+{
+    #header{
+        height: 50px;
+    }
+    
+    #logo {
+        width: 60px;
+        height: 50px;
+        margin-left: 0px;
+    }
+
+
+    #header div{
+        font-size: 17px;
+        gap: 13px;
+    }
+
+    .h2, h2 {
+        font-size: 1em;
+    }
+
+}
+
+@media(max-width: 430px)
+{
+    #logo {
+        width: 60px;
+        height: 50px;
+    }
+
+
+    #header div{
+        gap: 10px;
+    }
+
+    #header{
+        height: 50px;
+    }
+
+    .h2, h2 {
+        font-size: 0.8em;
+    }
+
+    #linkright {
+        margin-right: 10px;
+    }
+}
+
+@media(max-width: 360px)
+{
+    #logo {
+        width: 60px;
+        height: 50px;
+    }
+
+
+    #header div{
+        gap: 8px;
+    }
+
+    .h2, h2 {
+        font-size: 0.7em;    
+    }
+
+    #linkright {
+        margin-right: 20px;
+    }
+}
+
 
 h1 {
     color: #000000;
@@ -99,20 +185,6 @@ h1 {
 
 #carouselExampleSlidesOnly{
     margin: 0;
-}
-
-.cool-link::after {
-    content: '';
-    display: block;
-    width: 0;
-    height: 2px;
-    background: white;
-    transition: width .3s;
-}
-
-.cool-link:hover::after {
-    width: 100%;
-    transition: width .3s;
 }
 
 #funcionamento{
@@ -143,107 +215,45 @@ h1 {
     font-size: 20px;
 }
 
-/* CARDAPIO */
+@media(max-width: 850px){
+    h1{
+        font-size: 35px;
+    }
 
-#containercardapio {
-    justify-content: center; 
-    display: flex; 
-    width: 100%;
+    #funcionamento p {
+        font-size: 15px;
+    }
 }
 
-#cardapiopng {
-    width: 60px;
-    height: 66px;
-    margin-right: 5px;
-    margin-bottom: 5px;
+@media(max-width: 576px){
+    .container{
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+
+    #slidepropaganda1{
+        content:url(conteudo/imagens/s1.PNG)
+    }
+
+    #slidepropaganda2{
+        content:url(conteudo/imagens/s2.PNG)
+    }
+
+    #slidepropaganda3{
+        content:url(conteudo/imagens/s3.PNG)
+    }
+
+
+
 }
 
-/* SLIDEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE */
+@media(max-width: 550px){
+    h1{
+        font-size: 25px;
+    }
 
-.carousel-control-next-icon{
-    background-image: url(conteudo/imagens/setaright.png);
-    display: inline-block;
-    width: 150px;
-    height: 200px;
-    position: absolute;
-    margin-left: 350px;
+    #funcionamento p {
+        font-size: 10px;
+        letter-spacing: 0px;
+    }
 }
-
-.carousel-control-prev-icon{
-    background-image: url(conteudo/imagens/setaleft.png);
-    width: 150px;
-    height: 200px;
-    position: absolute;
-    margin-right: 350px;
-}
-
-.borda {
-    border: 10px solid black;
-    margin: 20px;
-}
-
-
-.carousel-indicators li {
-    box-sizing: content-box;
-    -ms-flex: 0 1 auto;
-    flex: 0 1 auto;
-    width: 50px;
-    height: 5px;
-    margin-right: 3px;
-    margin-left: 3px;
-    text-indent: -999px;
-    cursor: pointer;
-    background-color: #212529;
-    background-clip: padding-box;
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent;
-    opacity: .5;
-    transition: opacity .6s ease;
-}
-
-
-.cardapio img{
-    height: 900px;
-    width: 900px;
-}
-
-/* PEDIDO */
-
-#containerpedido {
-    align-items: center;
-    justify-content: space-evenly; 
-    max-width: 1200px; 
-    display: flex;
-    margin: 0 auto;
-    margin-top: 30px;
-}
-
-
-figure {
-    justify-content: center;
-    text-align: center;
-    height: 130px;
-}
-
-figure figcaption {
-    font-size: 30px;
-    font-family: 'Bree Serif', serif;
-}
-
-p {
-    text-align: center;
-    font-size: 30px;
-    font-family: 'Montserrat', sans-serif;
-}
-
-/* REDES SOCIAIS */
-
-#containerredes {
-    display: flex;
-    justify-content: center;
-    gap: 100px;
-    margin: 50px;
-}
-
-
-

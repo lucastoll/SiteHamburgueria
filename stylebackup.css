@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap'); /* Bree Serif */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap'); /* Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');  /* Quicksand */
+
+#maincontainer {
+    margin: 0;
+    padding: 0%;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    /* background:linear-gradient(#FDBC00, #fd7200); */
+    background:linear-gradient(#FDBC00, #fd9800);
+/*     background:linear-gradient(#f1d074, #e07025);
+ */}
+
+/* GERAL */
+
+.subtitulos {
+    color: #000000;
+    font-family: 'Bree Serif', serif;
+    font-size: 51px;
+    text-align: center;
+}
+
+.socialmedia {
+    width: 150px;
+    height: 120px;
+}
+
+/* HEADER */
+
+#header{
+    display: flex;
+    background: #000000f3;
+   /*  background: black; */
+    color: white;
+    /* color: #f72929; */
+    width: 100%;
+    height: 70px;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+    font-family: 'Quicksand', sans-serif;
+    /* position: fixed; */
+    transition: translateX(-50%) translateY(-50%)
+}
+
+#header div{
+    font-size: 17px;
+    align-self: center;
+    align-items: center;
+    gap: 30px;
+}
+
+a, a:hover, a:visited, a:link, a:active
+{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#logo {
+    width: 90px;
+    height: 80px;
+    margin-left: 20px;
+}
+
+#linkleft {
+    display: flex;
+}
+
+#linkright {
+    margin-right: 30px;
+}
+
+
+/* AMERICAN TASTE HAMBURGUERIA + SLIDE PROPAGANDA */
+
+h1 {
+    color: #000000;
+    font-family: 'Bree Serif', serif;
+    font-size: 76px;
+    text-align: center;
+    align-self: center;
+    word-spacing: 10px;
+    letter-spacing: 1px;
+}
+
+.propaganda img{
+    width: 734px;
+    height: 488px;
+    border: 1px solid black;
+}
+
+#carouselExampleSlidesOnly{
+    margin: 0;
+}
+
+.cool-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: width .3s;
+}
+
+.cool-link:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+
+#funcionamento{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#funcionamento p {
+    font-family: 'Bree Serif', serif;
+    font-size: 30px;
+    line-height: 33px;
+    padding-top: 10px;
+}
+
+#caixavermelha{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 174px;
+    height: 45px;
+    color: white;
+    background: #A71315;
+    font-family: 'Bree Serif', serif;
+    font-size: 20px;
+}
+
+/* CARDAPIO */
+
+#containercardapio {
+    justify-content: center; 
+    display: flex; 
+    width: 100%;
+}
+
+#cardapiopng {
+    width: 60px;
+    height: 66px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+/* SLIDEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE */
+
+.carousel-control-next-icon{
+    background-image: url(conteudo/imagens/setaright.png);
+    display: inline-block;
+    width: 150px;
+    height: 200px;
+    position: absolute;
+    margin-left: 350px;
+}
+
+.carousel-control-prev-icon{
+    background-image: url(conteudo/imagens/setaleft.png);
+    width: 150px;
+    height: 200px;
+    position: absolute;
+    margin-right: 350px;
+}
+
+.borda {
+    border: 10px solid black;
+    margin: 20px;
+}
+
+
+.carousel-indicators li {
+    box-sizing: content-box;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    width: 50px;
+    height: 5px;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #212529;
+    background-clip: padding-box;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    opacity: .5;
+    transition: opacity .6s ease;
+}
+
+
+.cardapio img{
+    height: 900px;
+    width: 900px;
+}
+
+/* PEDIDO */
+
+#containerpedido {
+    align-items: center;
+    justify-content: space-evenly; 
+    max-width: 1200px; 
+    display: flex;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+
+figure {
+    justify-content: center;
+    text-align: center;
+    height: 130px;
+}
+
+figure figcaption {
+    font-size: 30px;
+    font-family: 'Bree Serif', serif;
+}
+
+p {
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* REDES SOCIAIS */
+
+#containerredes {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin: 50px;
+}
+
+
+
