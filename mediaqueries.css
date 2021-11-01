@@ -373,13 +373,17 @@
     }
 }
 
-/* SECTION FAÇA SEU PEDIDO */
+/* SECTION FAÇA SEU PEDIDO + REDES SOCIAIS*/
 
 @media(max-width: 550px){
     #pedidoinfo{
         font-size: 25px;
     }
-
+    
+    /* REDES SOCIAIS */
+    #containerredes{
+        max-width: 400px;
+    }
 
 }
 
@@ -404,16 +408,24 @@
     .subtitulos{
         font-size: 41px;
     }
+
+    /* REDES SOCIAIS */
+    #containerredes{
+        max-width: 300px;
+        grid-template-areas: 
+        "facebook"
+        "instagram";    
+    }
+    
+    figure a img{
+        height: 150px;
+    }
+    
 }
 
 @media(max-width: 410px){
     #containerpedido {
-    grid-template-areas: 
-    "ifood"
-    "whatsapp"
-    "delivery";
     grid-gap: 30px;
-    
     }
 
     #pedidoinfo{
@@ -427,5 +439,12 @@
     .subtitulos{
         font-size: 31px;
     }
+
+    /* REDES SOCIAIS */
+
+    figure a img{
+        height: 120px;
+    }
+    
 }
 

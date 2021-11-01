@@ -117,13 +117,12 @@ a, a:hover, a:visited, a:link, a:active
     justify-content: center;
     align-items: center;
     gap: 10px;
+    margin-top: 10px;
 }
 
 #funcionamento p{
     font-family: 'Bree Serif', serif;
     font-size: 30px;
-    line-height: 33px;
-    padding-top: 10px;
 }
 
 #caixavermelha{
@@ -239,16 +238,35 @@ p {
     text-align: center;
     font-size: 30px;
     font-family: 'Montserrat', sans-serif;
+    margin-bottom: 0px;
+    line-height: 1;
+}
+
+#pedidodivinfo{
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
 }
 
 /* REDES SOCIAIS */
 
-#containerredes {
-    display: flex;
-    justify-content: center;
-    gap: 100px;
-    margin: 50px;
+#containerredes{
+    display: grid;
+    grid-template-areas: "facebook instagram";
+    place-items: center;
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 30px;
 }
+
+figure{
+    text-align: center;
+}
+
+figure a img{
+    height: 140px;
+}
+
 
 
 
