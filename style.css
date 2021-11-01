@@ -2,19 +2,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap'); /* Montserrat */
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');  /* Quicksand */
 
-#maincontainer {
+/* GERAL */
+
+#maincontainer{
     margin: 0;
     padding: 0%;
 }
 
-* {
+*{
     padding: 0;
     margin: 0;
     scroll-behavior: smooth;
 }
 
-body{
+body{ 
     overflow-x: hidden;
+}
+
+h2{
+    margin-bottom: 0px;
+    margin-top: 2px;
+}
+
+h1{
+    color: #000000;
+    font-family: 'Bree Serif', serif;
+    font-size: 76px;
+    text-align: center;
+    align-self: center;
+    word-spacing: 10px;
+    letter-spacing: 0px;
+}
+
+.subtitulos {
+    color: #000000;
+    font-family: 'Bree Serif', serif;
+    font-size: 51px;
+    text-align: center;
 }
 
 /* HEADER */
@@ -25,17 +49,18 @@ body{
     color: white;
     width: 100%;
     height: 70px;
-    justify-content: space-between;
+    justify-content: start;
     align-items: center;
     border-bottom: 1px solid gray;
     font-family: 'Quicksand', sans-serif;
-    transition: translateX(-50%) translateY(-50%)
+    transition: translateX(-50%) translateY(-50%) /* Animação */
 }
 
-#header div{
+#header a{
     font-size: 17px;
     align-items: center;
-    gap: 30px;
+    margin-left: 10px;
+    margin-right: 20px;
 }
 
 a, a:hover, a:visited, a:link, a:active
@@ -45,22 +70,23 @@ a, a:hover, a:visited, a:link, a:active
     cursor: pointer;
 }
 
-#logo {
+#logo{
     width: 90px;
     height: 80px;
     margin-left: 10px;
 }
 
-#linkleft {
+#linkleft{
     display: flex;
 }
 
-#linkright {
+#linkright{
     margin-right: 30px;
+    margin-left: 30px;
 }
 
 
-.cool-link::after {
+.cool-link::after{
     content: '';
     display: block;
     width: 0;
@@ -69,121 +95,16 @@ a, a:hover, a:visited, a:link, a:active
     transition: width .3s;
 }
 
-.cool-link:hover::after {
+.cool-link:hover::after{
     width: 100%;
     transition: width .3s;
 }
 
-h2{
-    margin-bottom: 0px;
-}
-
-@media(max-width: 800px)
-{
-    #logo {
-        width: 70px;
-        height: 60px;
-    }
-
-
-    #header div{
-        gap: 15px;
-    }
-
-    .h2, h2 {
-        font-size: 1.5em;
-    }
-
-    #linkright {
-        margin-right: 10px;
-    }
-}
-
-@media(max-width: 600px)
-{
-    #header{
-        height: 50px;
-    }
-    
-    #logo {
-        width: 60px;
-        height: 50px;
-        margin-left: 0px;
-    }
-
-
-    #header div{
-        font-size: 17px;
-        gap: 13px;
-    }
-
-    .h2, h2 {
-        font-size: 1em;
-    }
-
-}
-
-@media(max-width: 430px)
-{
-    #logo {
-        width: 60px;
-        height: 50px;
-    }
-
-
-    #header div{
-        gap: 10px;
-    }
-
-    #header{
-        height: 50px;
-    }
-
-    .h2, h2 {
-        font-size: 0.8em;
-    }
-
-    #linkright {
-        margin-right: 10px;
-    }
-}
-
-@media(max-width: 360px)
-{
-    #logo {
-        width: 60px;
-        height: 50px;
-    }
-
-
-    #header div{
-        gap: 8px;
-    }
-
-    .h2, h2 {
-        font-size: 0.7em;    
-    }
-
-    #linkright {
-        margin-right: 20px;
-    }
-}
-
-
-h1 {
-    color: #000000;
-    font-family: 'Bree Serif', serif;
-    font-size: 76px;
-    text-align: center;
-    align-self: center;
-    word-spacing: 10px;
-    letter-spacing: 1px;
-}
+/* SECTION 1 AMERICAN TASTE HAMBURGUERIA + SLIDER */
 
 .propaganda img{
     width: 734px;
     height: 488px;
-    border: 5px solid black;
 }
 
 #carouselExampleSlidesOnly{
@@ -198,7 +119,7 @@ h1 {
     gap: 10px;
 }
 
-#funcionamento p {
+#funcionamento p{
     font-family: 'Bree Serif', serif;
     font-size: 30px;
     line-height: 33px;
@@ -218,148 +139,10 @@ h1 {
     font-size: 20px;
 }
 
-@media(max-width: 1144px){
-    h1{
-        font-size: 50px;
-    }
-
-    #funcionamento p {
-        font-size: 25px;
-        letter-spacing: 0px;
-    }
-}
-
-@media(max-width: 850px){
-    h1{
-        font-size: 35px;
-    }
-
-    #funcionamento p {
-        font-size: 15px;
-        padding-top: 0px;
-    }
-
-    p {
-        margin-bottom: 0rem;
-    }
-
-    #caixavermelha{
-        width: 154px;
-        height: 40px;
-        font-size: 20px;
-    }
-
-    #funcionamento{
-        margin-top: 10px;
-    }
-
-    #caixavermelha{
-        width: 144px;
-        height: 35px;
-        font-size: 15px;
-    }
-}
-
-@media(max-width: 576px){ /* Começo mobile */
-    .container{
-        padding-right: 0px;
-        padding-left: 0px;
-    }
-
-    #slidepropaganda1{
-        content:url(conteudo/imagens/s1.PNG)
-    }
-
-    #slidepropaganda2{
-        content:url(conteudo/imagens/s2.PNG)
-    }
-
-    #slidepropaganda3{
-        content:url(conteudo/imagens/s3.PNG)
-    }
-
-    .propaganda img{
-        height: 534px;
-        border: 0px solid black;
-    }
-
-    h1{
-        font-size: 25px;
-        word-spacing: 3px;
-        letter-spacing: 0px;
-        margin: 5px;
-    }
-
-    #funcionamento p {
-        font-size: 15px;
-        letter-spacing: 0px;
-    }
-
-    #caixavermelha{
-        width: 124px;
-        height: 35px;
-        font-size: 15px;
-    }
-
-
-}
-
-@media(max-width: 476px){
-    h1{
-        font-size: 20px;
-    }
-
-    #funcionamento p {
-        font-size: 12px;
-        letter-spacing: 0px;
-    }
-
-    #caixavermelha{
-        width: 94px;
-        height: 25px;
-        font-size: 12px;
-    }
-
-    #funcionamento{
-        gap: 5px;
-    }
-
-    .propaganda img{
-        height: 434px;
-        border: 0px solid black;
-    }
-}
-
-@media(max-width: 376px){
-    h1{
-        font-size: 20px;
-    }
-
-    #funcionamento p {
-        font-size: 10px;
-        letter-spacing: 0px;
-    }
-
-    #caixavermelha{
-        width: 74px;
-        height: 18px;
-        font-size: 9px;
-    }
-
-    #funcionamento{
-        gap: 3px;
-    }
-
-    .propaganda img{
-        height: 400px;
-        border: 0px solid black;
-    }
-}
-
 
 /* CARDAPIO */
 
-#containercardapio {
+#containercardapio{
     justify-content: center; 
     align-items: center;
     display: flex; 
@@ -367,14 +150,23 @@ h1 {
     margin-top: 10px;
 }
 
-#cardapiopng {
+#cardapiopng{
     width: 60px;
     height: 66px;
     margin-right: 5px;
-    margin-bottom: 5px;
 }
 
-/* SLIDEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE */
+#cardapioheader{
+    font-family: 'Bree Serif', serif;
+    font-size: 60px;
+}
+
+/* SLIDER */
+
+
+.carousel-control-next, .carousel-control-prev{
+    width: 35%;
+}
 
 .carousel-control-next-icon{
     background-image: url(conteudo/imagens/setaright.png);
@@ -382,7 +174,7 @@ h1 {
     width: 150px;
     height: 200px;
     position: absolute;
-    margin-left: 350px;
+    margin-left: 550px;
 }
 
 .carousel-control-prev-icon{
@@ -390,17 +182,17 @@ h1 {
     width: 150px;
     height: 200px;
     position: absolute;
-    margin-right: 350px;
+    margin-right: 550px;
 }
 
 
-.borda {
+.borda{
     border: 10px solid black;
     margin: 20px;
 }
 
 
-.carousel-indicators li {
+.carousel-indicators li{
     box-sizing: content-box;
     -ms-flex: 0 1 auto;
     flex: 0 1 auto;
@@ -424,98 +216,39 @@ h1 {
     width: 900px;
 }
 
-@media(max-width: 1600px){
-    .carousel-control-next-icon{
-        background-image: url(conteudo/imagens/caret-right-fill.svg);
-        width: 50px;
-        height: 100px;
-        position: absolute;
-        margin-left: 200px;
-    }
-    
-    .carousel-control-prev-icon{
-        background-image: url(conteudo/imagens/caret-left-fill.svg);
-        width: 50px;
-        height: 100px;
-        position: absolute;
-        margin-right: 200px;
-    }   
-}
+/* SECTION FAÇA SEU PEDIDO */
 
-@media(max-width: 1200px){
-    .carousel-control-next-icon{
-        margin-left: 180px;
-    }
-    
-    .carousel-control-prev-icon{
-        margin-right: 180px;
-    }   
+/* PEDIDO */
+
+#containerpedido {
+    display: grid;
+    grid-template-areas: "ifood whatsapp delivery";
+    place-items: center;
+    max-width: 1200px; 
+    margin: 0 auto;
+    margin-top: 30px;
 }
 
 
-@media(max-width: 991px){
-    .carousel-control-next-icon{
-        margin-left: 140px;
-    }
-    
-    .carousel-control-prev-icon{
-        margin-right: 140px;
-    }   
+#containerpedido a img{
+    text-align: center;
+    height: 130px;
 }
 
-@media(max-width: 768px){
-    .cardapio img {
-        height: 600px;
-    }
-
-    .borda {
-        border: 5px solid black;
-    }
-
-    .carousel-control-next-icon{
-        margin-left: 110px;
-    }
-    
-    .carousel-control-prev-icon{
-        margin-right: 110px;
-    }   
+p {
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
 }
 
-@media(max-width: 576px){
-    .cardapio img {
-        height: 600px;
-    }
+/* REDES SOCIAIS */
 
-    .borda {
-        border: 5px solid black;
-    }
-
-    .carousel-control-next-icon{
-        width: 20px;
-        margin-left: 50px;
-    }
-    
-    .carousel-control-prev-icon{
-        width: 20px;
-        margin-right: 50px;
-    }   
+#containerredes {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin: 50px;
 }
 
-@media(max-width: 500px){
-    .cardapio img {
-        height: 600px;
-    }
 
-    .borda {
-        border: 5px solid black;
-    }
-
-    .carousel-control-next-icon{
-        display: none;
-    }
-    
-    .carousel-control-prev-icon{
-        display: none;
-    }   
-}
 

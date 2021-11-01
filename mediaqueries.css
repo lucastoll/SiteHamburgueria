@@ -1,0 +1,431 @@
+/* NAVBAR */
+
+@media(max-width: 800px)
+{
+    #logo {
+        width: 80px;
+        height: 70px;
+    }
+
+
+    #header a{
+        font-size: 17px;
+        margin-left: 5px;
+        margin-right: 10px;
+    }
+
+    .h2, h2 {
+        font-size: 25px;
+    }
+
+    #linkright {
+        margin-right: 10px;
+    }
+}
+
+
+@media(max-width: 600px)
+{ 
+    #header{
+        height: 50px;
+    }
+    
+    #logo {
+        width: 70px;
+        height: 60px;
+        margin-left: 0px;
+    }
+
+    #header a{
+        font-size: 17px;
+        align-items: center;
+        margin-left: 4px;
+        margin-right: 10px;
+    }
+
+    .h2, h2 {
+        font-size: 15px;
+    }
+}
+
+@media(max-width: 430px)
+{
+    #logo {
+        width: 60px;
+        height: 50px;
+    }
+
+
+    #header div{
+        gap: 10px;
+    }
+
+    #header{
+        height: 50px;
+    }
+
+    .h2, h2 {
+        font-size: 12px;
+    }
+
+    #linkright {
+        margin-right: 10px;
+    }
+}
+
+@media(max-width: 360px)
+{
+    #logo {
+        width: 60px;
+        height: 50px;
+    }
+
+
+    #header div{
+        gap: 8px;
+    }
+
+    .h2, h2 {
+        font-size: 0.7em;    
+    }
+
+    #linkright {
+        margin-right: 20px;
+    }
+}
+
+/* SECTION 1 AMERICAN TASTE HAMBURGUERIA + SLIDE*/
+
+@media(max-width: 1144px){
+    h1{
+        font-size: 50px;
+    }
+
+    #funcionamento p {
+        font-size: 25px;
+        letter-spacing: 0px;
+    }
+}
+
+@media(max-width: 850px){
+    h1{
+        font-size: 35px;
+        letter-spacing: 0;
+    }
+
+    #funcionamento p {
+        font-size: 15px;
+        padding-top: 0px;
+    }
+
+    p {
+        margin-bottom: 0rem;
+    }
+
+    #caixavermelha{
+        width: 154px;
+        height: 40px;
+        font-size: 20px;
+    }
+
+    #funcionamento{
+        margin-top: 10px;
+    }
+
+    #caixavermelha{
+        width: 144px;
+        height: 35px;
+        font-size: 15px;
+    }
+}
+
+@media(max-width: 576px){ /* Começo mobile */
+    #cardapioheader{
+        font-size: 34px;
+        margin: 10px;
+    }
+    
+    .container{
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+
+    #slidepropaganda1{
+        content:url(conteudo/imagens/s1.PNG)
+    }
+
+    #slidepropaganda2{
+        content:url(conteudo/imagens/s2.PNG)
+    }
+
+    #slidepropaganda3{
+        content:url(conteudo/imagens/s3.PNG)
+    }
+
+    .propaganda img{
+        height: 534px;
+    }
+
+    h1{
+        font-size: 31px;
+        word-spacing: 3px;
+        letter-spacing: 0px;
+        margin: 5px;
+    }
+
+    #funcionamento p {
+        font-size: 15px;
+        letter-spacing: 0px;
+    }
+
+    #caixavermelha{
+        width: 124px;
+        height: 35px;
+        font-size: 15px;
+    }
+
+
+}
+
+@media(max-width: 476px){
+    h1{
+        font-size: 20px;
+    }
+
+    #funcionamento p {
+        font-size: 12px;
+        letter-spacing: 0px;
+    }
+
+    #caixavermelha{
+        width: 94px;
+        height: 25px;
+        font-size: 12px;
+    }
+
+    #funcionamento{
+        gap: 5px;
+    }
+
+    .propaganda img{
+        height: 434px;
+    }
+}
+
+@media(max-width: 376px){
+    h1{
+        font-size: 20px;
+    }
+
+    #funcionamento p {
+        font-size: 10px;
+        letter-spacing: 0px;
+    }
+
+    #caixavermelha{
+        width: 74px;
+        height: 18px;
+        font-size: 9px;
+    }
+
+    #funcionamento{
+        gap: 3px;
+    }
+
+    .propaganda img{
+        height: 400px;
+    }
+}
+
+/* CARDAPIO + SLIDE */
+
+
+@media(max-width: 1600px){
+    .carousel-control-next-icon{
+        background-image: url(conteudo/imagens/caret-right-fill.svg);
+        width: 50px;
+        height: 100px;
+        position: absolute;
+        margin-left: 420px;
+    }
+    
+    .carousel-control-prev-icon{
+        background-image: url(conteudo/imagens/caret-left-fill.svg);
+        width: 50px;
+        height: 100px;
+        position: absolute;
+        margin-right: 420px;
+    }   
+}
+
+@media(max-width: 1200px){
+    .carousel-control-next-icon{
+        margin-left: 360px;
+    }
+    
+    .carousel-control-prev-icon{
+        margin-right: 360px;
+    }   
+}
+
+
+@media(max-width: 991px){
+    .carousel-control-next-icon{
+        margin-left: 270px;
+    }
+    
+    .carousel-control-prev-icon{
+        margin-right: 270px;
+    }   
+}
+
+@media(max-width: 768px){
+    .cardapio img {
+        height: 100vh;
+    }
+    
+    #cardapiopng {
+        width: 50px;
+        height: 50px;
+    }
+    
+
+    .borda {
+        border: 5px solid black;
+    }
+
+    .carousel-control-next-icon{
+        display: none;
+    }
+    
+    .carousel-control-prev-icon{
+        display: none;
+    }   
+
+    .carousel-indicators li {
+        box-sizing: content-box;
+        -ms-flex: 0 1 auto;
+        flex: 0 1 auto;
+        width: 30px;
+        height: 5px;
+        margin-right: 3px;
+        margin-left: 3px;
+        text-indent: -999px;
+        cursor: pointer;
+        background-color: #212529;
+        background-clip: padding-box;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        opacity: .5;
+        transition: opacity .6s ease;
+    }
+
+    ol{
+        margin-bottom: 0px;
+    }
+
+    .cardapio img {
+        height: 100vh;
+    }
+
+    #cardapiopng{
+        display: none;
+    }
+
+    .borda {
+        border: 0px;
+        margin: 0px;
+    }
+
+    .container{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    
+    .carousel-control-next-icon{
+        display: none;
+    }
+    
+    .carousel-control-prev-icon{
+        display: none;
+    }   
+     
+
+    .container-fluid{
+        padding: 0px;
+    }
+    
+}
+
+
+@media(max-width: 500px){
+
+    .cardapio img {
+        height: 70vh;
+    }
+
+}
+
+@media(max-width: 400px){
+
+    .cardapio img {
+        height: 50vh;
+    }
+}
+
+/* SECTION FAÇA SEU PEDIDO */
+
+@media(max-width: 550px){
+    #pedidoinfo{
+        font-size: 25px;
+    }
+
+
+}
+
+@media(max-width: 480px){
+    #containerpedido {
+    grid-template-areas: 
+    "ifood"
+    "whatsapp"
+    "delivery";
+    grid-gap: 40px;
+    
+    }
+
+    #pedidoinfo{
+        font-size: 20px;
+    }
+
+    #containerpedido a img{
+        height: 150px;
+    }
+
+    .subtitulos{
+        font-size: 41px;
+    }
+}
+
+@media(max-width: 410px){
+    #containerpedido {
+    grid-template-areas: 
+    "ifood"
+    "whatsapp"
+    "delivery";
+    grid-gap: 30px;
+    
+    }
+
+    #pedidoinfo{
+        font-size: 17px;
+    }
+
+    #containerpedido a img{
+        height: 120px;
+    }
+
+    .subtitulos{
+        font-size: 31px;
+    }
+}
+

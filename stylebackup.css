@@ -50,11 +50,8 @@ body {
     transition: translateX(-50%) translateY(-50%)
 }
 
-#header div{
-    font-size: 17px;
-    align-self: center;
-    align-items: center;
-    gap: 30px;
+#header h2{
+    margin-top: 2px;
 }
 
 a, a:hover, a:visited, a:link, a:active
@@ -94,7 +91,6 @@ h1 {
 .propaganda img{
     width: 734px;
     height: 488px;
-    border: 1px solid black;
 }
 
 #carouselExampleSlidesOnly{
