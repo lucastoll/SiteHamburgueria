@@ -15,10 +15,14 @@
     scroll-behavior: smooth;
 }
 
-body{ 
-    overflow-x: hidden;
+body{
+    background: linear-gradient(110deg, #ffffff 85%, #f81d00 74%);
 }
 
+/* #main{
+    background-color: linear-gradient(10deg, #ffffff 85%, #f8d300 74%);
+}
+ */
 h2{
     margin-bottom: 0px;
     margin-top: 2px;
@@ -240,6 +244,7 @@ p {
     font-family: 'Montserrat', sans-serif;
     margin-bottom: 0px;
     line-height: 1;
+    color: black;
 }
 
 #pedidodivinfo{
@@ -267,6 +272,8 @@ figure a img{
     height: 140px;
 }
 
-
+figcaption{
+    font-size: 30px;
+}
 
 
