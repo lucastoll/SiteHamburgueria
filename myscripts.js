@@ -1,7 +1,27 @@
-$('.play').carousel({
+/* CASO O HORÁRIO ATUAL SEJA O DE FUNCIONAMENTO O SITE INFORMA ABERTO, CASO CONTRARIO INFORMA FECHADO */
+
+var d = new Date();
+var dia = d.getDay();
+var horas = d.getHours();
+
+var pstatus = document.getElementById("status");
+if(dia != 1 && dia != 2 && horas >= 18 && horas <= 23)
+{
+pstatus.textContent = "ABERTO!"
+}
+else
+{
+pstatus.textContent = "FECHADO!"
+}
+
+
+/* PRIMEIRO CAROUSEL */
+
+  $('.play').carousel({
     interval: 10000
   })
   
+/* SEGUNDO CAROUSEL */
   $('.pause').carousel({
     interval: false
   })
@@ -23,7 +43,6 @@ $('.play').carousel({
     }
   }
 
-
 mediaQuery.addListener(mobileslidechange)
 mobileslidechange(mediaQuery)
 
@@ -43,7 +62,6 @@ function mobileslidechange2(e){
   hamburgueria.textContent = "American Taste Hamburgueria";
   }
 }
-
 
 mediaQuery2.addListener(mobileslidechange2)
 mobileslidechange2(mediaQuery2)
