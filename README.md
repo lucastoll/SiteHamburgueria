@@ -1,6 +1,11 @@
 # 🍔 SiteHamburgueria
 Link: https://lucastoll.github.io/SiteHamburgueria/
 
+
+### Video Pitch - YouTube.
+[![Vídeo Pitch](https://img.youtube.com/vi/d_2StmxKlGc/0.jpg)](https://www.youtube.com/watch?v=d_2StmxKlGc)
+
+
 ## ⚫ O que é
 O projeto desenvolvido foi feito para a disciplina de Web Design (2° Semestre) e consiste em um website feito para a hamburgueria da família de um dos membro do grupo, a página foi feita de maneira responsiva para Desktop e Mobile, conténdo as seguintes seções:
 
