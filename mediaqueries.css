@@ -407,6 +407,17 @@
         max-width: 400px;
     }
 
+    #containerpedido a img, figure a img{
+        height: 100px;
+    }
+
+    figcaption{
+        font-size: 20px;
+    }
+
+    footer{
+        font-size: 12px;
+    }
 }
 
 @media(max-width: 480px){
@@ -423,10 +434,6 @@
         font-size: 20px;
     }
 
-    #containerpedido a img{
-        height: 150px;
-    }
-
     .subtitulos{
         font-size: 41px;
     }
@@ -438,11 +445,18 @@
         "facebook"
         "instagram";    
     }
-    
-    figure a img{
-        height: 150px;
+
+    #containerpedido a img, figure a img{
+        height: 110px;
     }
-    
+
+    figcaption{
+        font-size: 20px;
+    }
+
+    footer{
+        font-size: 12px;
+    }    
 }
 
 @media(max-width: 410px){
@@ -454,22 +468,22 @@
         font-size: 17px;
     }
 
-    #containerpedido a img{
-        height: 120px;
-    }
-
     .subtitulos{
         font-size: 31px;
     }
 
     /* REDES SOCIAIS */
 
-    figure a img{
-        height: 120px;
+    #containerpedido a img, figure a img{
+        height: 100px;
     }
-    
+
     figcaption{
-        font-size: 20px;
-    }    
+        font-size: 18px;
+    }
+
+    footer{
+        font-size: 11px;
+    }  
 }
 

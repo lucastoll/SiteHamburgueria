@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap'); /* Bree Serif */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap'); /* Montserrat */
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');  /* Quicksand */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@1,200&family=Roboto:ital,wght@0,400;1,700&display=swap'); /* FOOTER */
 
 /* GERAL */
 
@@ -19,10 +20,6 @@ body{
     background: linear-gradient(110deg, #ffffff 85%, #f81d00 74%);
 }
 
-/* #main{
-    background-color: linear-gradient(10deg, #ffffff 85%, #f8d300 74%);
-}
- */
 h2{
     margin-bottom: 0px;
     margin-top: 2px;
@@ -44,6 +41,15 @@ h1{
     font-size: 51px;
     text-align: center;
 }
+
+
+::-moz-selection { /* Code for Firefox */
+    background: #f81d00;
+  }
+  
+  ::selection {
+    background: #f81d00;
+  }
 
 /* HEADER */
 
@@ -276,4 +282,8 @@ figcaption{
     font-size: 30px;
 }
 
-
+footer{
+    background: black;
+    color: white;
+    font-family: 'IBM Plex Mono', monospace;
+}
