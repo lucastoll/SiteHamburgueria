@@ -162,16 +162,6 @@
 }
 
 @media(max-width: 576px){ /* Começo mobile */
-    #cardapioheader{
-        font-size: 34px;
-        margin: 10px;
-    }
-    
-    .container{
-        padding-right: 0px;
-        padding-left: 0px;
-    }
-
     #slidepropaganda1{
         content:url(conteudo/imagens/s1.PNG)
     }

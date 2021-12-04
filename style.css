@@ -5,6 +5,16 @@
 
 /* GERAL */
 
+#skip, #skip:active, #skip:focus, #skip:hover{
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 1px;
+    height: 1px;
+    color: transparent;
+    position: absolute;
+}
+ 
 #maincontainer{
     margin: 0;
     padding: 0%;

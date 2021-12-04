@@ -16,7 +16,7 @@ pstatus.textContent = "FECHADO!"
 
 
 /* PRIMEIRO CAROUSEL */
-
+ 
   $('.play').carousel({
     interval: 10000
   })
